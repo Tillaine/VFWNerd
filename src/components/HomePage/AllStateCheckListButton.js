@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import LandingPageCard from './LandingPageCard';
 
 
-function AllStateChecklist() {
+function AllStateCheckListButton() {
   return (
     <div className="ByLawsSearch">
          <LandingPageCard>
@@ -14,4 +14,4 @@ function AllStateChecklist() {
   );
 }
 
-export default AllStateChecklist;
+export default AllStateCheckListButton;

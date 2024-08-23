@@ -7,15 +7,15 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Home from './Home'
+import HomePage from './components/HomePage/HomePage'
 
 function App() {
   return (
     <div className="App">
       <GlobalThemeOverride>
         <Box bgcolor='primary.light'>
-        <Home/>
-        {/* add switch between home, search, checklist, triva https://v5.reactrouter.com/web/example/basic */}
+        <HomePage/>
+        {/* add switch between home, search, checklist, triva */}
         </Box>
       </GlobalThemeOverride>
     </div>

@@ -1,12 +1,14 @@
-import logo from '../assets/VFWNerdLogo.png';
+import logo from '../../assets/VFWNerdLogo.png';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import ByLawsSearch from '../components/ByLawsSearch'
-import ByawsTriviaButton from '../components/BylawsTriviaButton'
-import AllStateChecklist from '../components/AllStateCheckList'
+import ByLawsSearch from './ByLawsSearch'
+import ByawsTriviaButton from './BylawsTriviaButton'
+import AllStateCheckListButton from './AllStateCheckListButton'
 
-const Home = () => {
-  <header className="App-header">
+
+const HomePage = () => {
+  <Box>
+    Yo
             <img src={logo} className="App-logo" alt="logo" />
                <Typography variant='h2' color={'White'} fontFamily={'Roboto'}>
                 <Box display='flex' flexDirection='row'>
@@ -17,9 +19,9 @@ const Home = () => {
             <Box display="flex" flexDirection="row">
                 <ByLawsSearch/>
                 <ByawsTriviaButton/>
-                <AllStateChecklist/>
+                <AllStateCheckListButton/>
             </Box>
-        </header>
+        </Box>
 }
 
-export default Home
+export default HomePage;
