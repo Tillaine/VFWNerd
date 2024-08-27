@@ -1,14 +1,16 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import LandingPageCard from './LandingPageCard';
+import { Link } from "react-router-dom";
 
+const AllStateChecklist = () =>  {
+  
 
-function AllStateChecklist() {
   return (
     <div className="ByLawsSearch">
          <LandingPageCard>
             <Typography> All State Check List </Typography>
-            <Button>Play</Button>
+            <Link to='AllState' ><Button>Play</Button></Link>
           </LandingPageCard>
     </div>
   );

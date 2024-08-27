@@ -1,26 +1,19 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import ByLawsSearch from './components/ByLawsSearch'
-import ByawsTriviaButton from './components/BylawsTriviaButton'
-import AllStateChecklist from './components/AllStateCheckList'
-import GlobalThemeOverride from './theme/GlobalThemeOverride';
-import './App.css';
 
 
 
-const AllStateCheckList = () => {
+const AllState = () => {
   return (
     <div className="App">
-      <GlobalThemeOverride>
         <Box bgcolor='primary.light'>
             <Typography variant="h1" >All State Checklist</Typography>
         </Box>
-      </GlobalThemeOverride>
     </div>
   );
 }
 
-export default AllStateCheckList;
+export default AllState;
 
 
 // Membership
