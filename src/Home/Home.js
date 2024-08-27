@@ -1,9 +1,9 @@
 import Typography from '@mui/material/Typography';
 import logo from '../assets/VFWNerdLogo.png';
 import Box from '@mui/material/Box';
-import ByLawsSearch from '../components/ByLawsSearch'
-import ByawsTriviaButton from '../components/BylawsTriviaButton'
-import AllStateChecklist from '../components/AllStateCheckList'
+import ByLawsSearch from './components/ByLawsSearch'
+import ByawsTriviaButton from './components/BylawsTriviaButton'
+import AllStateChecklist from './components/AllStateCheckList'
 
 
 const Home = () => {
