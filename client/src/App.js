@@ -11,7 +11,7 @@ import Trivia from './Trivia/Trivia'
 import Search from './Search/Search'
 
 const App = () => {
-  
+
   return (
     <div className="App">
       <GlobalThemeOverride>

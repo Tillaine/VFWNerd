@@ -1,6 +1,9 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import AllStateItem from './components/AllStateItem'
+import { useState } from 'react';
+
+import { useEffect } from 'react';
 
 const mockData = [
   {
@@ -71,9 +74,28 @@ const mockData = [
 }, 
 ]
 
-const ListItems = ( {items} ) => items.map( item => <AllStateItem {...item}/>)
+const ListItems = ( {items} ) => items.map( item => <AllStateItem key={item.itemName} {...item}/>)
 
 const AllState = () => {
+  const [items, setItems] = useState({})
+
+  const getAllStateItems = () =>  {
+    fetch('http://localhost:3000/api/AllState')
+   .then(response => response.json())
+   .then((data) => {
+    console.log({data})
+    const {items} = data
+    setItems(items)
+})
+   .catch(err => {
+       console.log(err)
+   })
+}
+
+useEffect(() => {
+  getAllStateItems();
+});
+
   return (
     <div className="App">
         <Box height='100%' bgcolor='primary.light'>
