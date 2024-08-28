@@ -30,19 +30,19 @@ const theme = createTheme({
       ].join(','),
         h1: {
           fontSize: '3rem',
-          color: '#4D3C39',
+          color: 'white',
           fontWeight: 900  },
         h2: {
           fontSize: '1.5rem',
-          color: '#4D3C39',
+          color: 'white',
           fontWeight: 800  },
         h3: {
           fontSize: '1rem',
-          color: '#4D3C39',
+          color: 'white',
           fontWeight: 700  },
           subtitle1: {
             fontSize: '.75rem',
-            color: '#4D3C39',
+            color: 'white',
             fontWeight: 700  },
           body1: {
               fontWeight: 600,
